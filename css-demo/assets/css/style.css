@@ -1,0 +1,25 @@
+/* CSS Demo Stylesheet */
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*  ---------------Global Sty-----------------  */
+  body{
+  font-family: "Mulish", sans-serif;
+  }
+
+
+
+body{
+    /* mostly just colors and font types */
+    background-color: cadetblue;
+    font-family: "Mulish", sans-serif;
+}
