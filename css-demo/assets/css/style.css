@@ -13,7 +13,29 @@ html {
   
   /*  ---------------Global Sty-----------------  */
   body{
-  font-family: "Mulish", sans-serif;
+    font-family: "Comic Neue", cursive;
+
+  }
+
+  header.primary{
+    background: red;
+    color:#ffffff;
+    text-shadow: 1px 1px#000000;
+    /*long Form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* sing valuse short hand*/
+    padding: 40px;
+    /*T, R, B, L */
+    padding: 20px 40px 20px 40px;
+
+    text-align:center;
+  }
+
+  header.primary h1{
+    
   }
 
 
@@ -21,5 +43,6 @@ html {
 body{
     /* mostly just colors and font types */
     background-color: cadetblue;
-    font-family: "Mulish", sans-serif;
+    font-family: "Comic Neue", cursive;
+
 }
