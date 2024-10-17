@@ -18,7 +18,7 @@ html {
   }
 
   header.primary{
-    background: red;
+    background: #E6D47B;
     color:#ffffff;
     text-shadow: 1px 1px#000000;
     /*long Form*/
@@ -35,14 +35,45 @@ html {
   }
 
   header.primary h1{
-    
+    font-size: 2.4rem;
+    margin: 10px 0 0 0;
   }
 
+  header.primary h1 a{
+    color:#D0574E;
+    text-decoration: none;
+  }
 
+  header.primary h2{
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  nav.primary{}
+  nav.primary ul{
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  nav.primary ul li{
+    list-style-type: none;
+  }
+  nav.primary ul li a{
+    color:#ffffff;
+    text-decoration:none;
+    border: 1px solid #c0c0c0;
+    background:#EEB8C4;
+    padding: 7.5px 10px;
+    border-radius: 20px;
+  }
+  nav.primary ul li a:hover{
+    background-color: #9A5A79;
+  }
 
 body{
     /* mostly just colors and font types */
-    background-color: cadetblue;
+    background-color: #4061A0;
     font-family: "Comic Neue", cursive;
 
 }
