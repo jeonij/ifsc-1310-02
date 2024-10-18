@@ -25,9 +25,34 @@ html {
     margin: 40px auto;
   }
 
+  .img-right {
+    float: right;
+    margin:10px 0 10px 20px;
+    border: 5px solid black;
+    padding:5px;
+    border-radius: 50px;
+  }
+
+  .img-left {
+    float: left;
+    margin:10px 20px 10px 0px;
+    border: 5px solid black;
+    padding:5px;
+    border-radius: 50px;
+  }
+
+  .img-center{
+    display:block;
+    margin: 20px auto;
+    border: 5px solid black;
+    padding:5px;
+    border-radius: 50px;
+  }
+
   /*  ---------------Global Sty-----------------  */
   body{
     font-family: "Comic Neue", cursive;
+    margin:0;
 
   }
 
@@ -134,6 +159,64 @@ html {
   #content article.post figure{
     margin:0;
   }
+
+  #practice h2{
+    color:aliceblue;
+    border-bottom: 2px dotted #D9D4DE;
+  }
+
+  #practice a{
+    color:aliceblue;
+    transition:.4s;
+  }
+
+  #practice a:hover{
+    text-decoration: none;
+    transition:.4s;
+  }
+
+  #practice h3{
+    border-left: 7.5px solid aliceblue;
+    padding:3.5px 10px;
+  }
+
+  table{
+    width:100%;
+    border:1px solid black;
+    margin: 20px 0;
+    border-collapse:collapse;
+  }
+  caption{
+    font-weight: bold;
+    margin:10px;
+  }
+  tr:nth-child(even){
+    background-color: rgba(0, 0, 0, .1);
+  }
+
+  tr:hover{
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  th{
+    background-color: #EEB8C4;
+    color:#D0574E;
+    padding:7.5px;
+  }
+  td{
+    border:1px solid black;
+    padding:5px;
+  }
+
+  td:nth-child(2), td:nth-child(3){
+    text-align:right;
+  }
+
+  td:nth-child(n+2){
+    text-align: right;
+  }
+
+
 
   aside[role="complementary"]{
     background: lavender;
