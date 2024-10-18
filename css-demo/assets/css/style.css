@@ -10,7 +10,21 @@ html {
   *:after {
     box-sizing: inherit;
   }
-  
+  /*  ---------------Responsive Images-----------------  */
+
+  img {
+    max-width: 100%;
+    
+  }
+
+  /*  ---------------Utility Classes-----------------  */
+
+  .container{
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+  }
+
   /*  ---------------Global Sty-----------------  */
   body{
     font-family: "Comic Neue", cursive;
@@ -26,7 +40,7 @@ html {
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
-    /* sing valuse short hand*/
+    /* single values short hand*/
     padding: 40px;
     /*T, R, B, L */
     padding: 20px 40px 20px 40px;
@@ -48,7 +62,10 @@ html {
     font-size: 1.4rem;
     margin: 0;
   }
-  nav.primary{}
+  nav.primary{
+    max-width:960px;
+    margin: auto;
+  }
   nav.primary ul{
     padding:0;
     display:flex;
@@ -66,9 +83,47 @@ html {
     background:#EEB8C4;
     padding: 7.5px 10px;
     border-radius: 20px;
+    transition: .4s;
   }
   nav.primary ul li a:hover{
     background-color: #9A5A79;
+  }
+
+
+  #intro {
+    line-height: 1.6;
+  }
+
+  #intro h2{
+    color:aliceblue;
+    text-decoration:underline;
+    border-bottom: 4px dotted #D9D4DE;
+  }
+
+  #content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:2rem;
+  }
+
+  #content article.post{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+    padding:10px;
+    border-radius:4px;
+    font-size: .8rem;
+  }
+
+  time.post-date, figcaption{
+    text-transform:uppercase;
+    color:#ccc;
+  }
+  #content a{
+    color:pink;
+  }
+
+  #content article.post figure{
+    margin:0;
   }
 
 body{
@@ -76,4 +131,21 @@ body{
     background-color: #4061A0;
     font-family: "Comic Neue", cursive;
 
+}
+
+
+
+/* ----------------- Media Queries ----------------- */
+@media screen and (max-width:600px){
+
+  nav.primary ul{
+    flex-direction: column;
+    gap:20px;
+    max-width: 250px;
+    margin:10px auto;
+  }
+
+  nav.primary ul a{
+    display:block;
+  }
 }
