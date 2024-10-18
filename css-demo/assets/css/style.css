@@ -216,7 +216,46 @@ html {
     text-align: right;
   }
 
+  #practice ol{
+    list-style-type:lower-alpha;
+  }
 
+  #practice ul{
+    list-style-type:square;
+  }
+
+  #practice ul li ul{
+    list-style-type:disc;
+  }
+
+  #practice dt{
+    font-weight:bold;
+  }
+
+  #practice dd{
+    margin:0;
+  }
+
+  dd + dt{
+    margin-top:1rem; 
+  }
+
+  blockquote{
+    border: 4px double #E6D47B;
+    padding: 20px 40px;
+    background-color: #EEB8C4;
+    color:#D0574E;
+    border-radius: 30px, 0;
+    margin:40px 80px;
+    line-height:1.4;
+  }
+
+  cite{
+    display: block;
+    text-align: right;
+    font-size: .7rem;
+    margin-top:1rem;
+  }
 
   aside[role="complementary"]{
     background: lavender;
